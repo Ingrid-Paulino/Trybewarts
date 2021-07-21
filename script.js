@@ -7,3 +7,12 @@ document.getElementById('button').addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+document.getElementById('agreement').addEventListener('click', () => {
+  const botao = document.getElementById('submit-btn');
+  if (document.getElementById('agreement').checked === true) {
+    botao.disabled = false;
+  } else {
+    botao.disabled = true;
+  }
+});
