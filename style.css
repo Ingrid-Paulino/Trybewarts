@@ -38,11 +38,10 @@
 .emailHouse-container {
   display: flex;
 }
-<<<<<<< HEAD
 #label-container {
   display: flex;
+
 }
-=======
 
 #label-family {
   display: flex;
@@ -52,4 +51,3 @@
   display: flex;
   flex-direction: column;
 }
->>>>>>> a628180040a72745b56903c4629ae6f0e3270d1b
