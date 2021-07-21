@@ -42,14 +42,21 @@
                   </select>
                 </div>
               </div>							
+            						
               <section id="family-container">
                 <label for="family" id="label-family">Qual sua família? </label>
-                <div class="q">
-                  <input type="radio" name="family" value="Frontend" id="family"> 
-                   <input type="radio" name="family" value="Backend" id="family"> Família Backend
-                   <input type="radio" name="family" value="FullStack" id="family"> Família FullStack
+                <div class="namesFamily-container form-check">
+                  <label for="family-front">
+                    <input type="radio" name="family" value="Frontend" id="family-front"> Família Frontend
+                  </label>
+                  <label for="family-back">
+                    <input type="radio" name="family" value="Backend" id="family-back"> Família Backend
+                  </label>
+                  <label for="family-full">
+                    <input type="radio" name="family" value="FullStack" id="family-full"> Família FullStack
+                  </label>
                 </div>
-              </section>					
+              </section>
               <section>
                 <label id="label-content" >Qual conteúdo você está com mais vontade de aprender?</label>
                 <div class="form-check">
@@ -65,6 +72,10 @@
                   <input value="SQL" type="radio">
                   <label>Python</label>
                   <input value="Python" type="radio">
+                </div>                               
+                <label for="textarea" class="textarea"> Deixe seu comentário:</label>                  
+                <textarea name="" id="textarea" cols="30" rows="10" class="form-check" maxlength="500"></textarea>           
+            
                 </div>                
               </section>							
             <section id="label-container">
@@ -91,7 +102,8 @@
                 <input value="10"  name="rate" type="radio">
                 <label for="">10</label>                
               </div>
-            </section>           					
+            </section>
+            <button id="submit-btn" type="submit">Enviar</button>      					
 
 						</form>
 					
