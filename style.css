@@ -1,6 +1,7 @@
 h2 {
   text-align: center;
 }
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -28,7 +29,6 @@ h2 {
 .main {
   display: flex;
   align-items: flex-start;
-  /* width: 95%; */
   padding-top: 25px;
   margin-left: 10%;
   margin-right: 80px;
@@ -89,6 +89,6 @@ footer {
 }
 
 .conteudo-container {
-  margin: 0px 50px;
-  padding: 0px 20px;
+  margin: 0 50px;
+  padding: 0 20px;
 }
