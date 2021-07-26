@@ -1,3 +1,9 @@
+html {
+  margin: 0px 0px 0px 0px;
+}
+h2 {
+  text-align: center;
+}
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -12,6 +18,10 @@
   align-items: center;
 }
 
+#father-form {
+  width: 580px;
+  border: solid;
+}
 
 #trybewarts-header-title {
   display: flex;
@@ -22,9 +32,11 @@
 .main {
   display: flex;
   align-items: flex-start;
-  width: 95%;
+  /* width: 95%; */
   padding-top: 25px;
   margin-left: 10%;
+  margin-right: 80px;
+  border: solid;
 }
 
 #evaluation-form {
@@ -35,6 +47,8 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+  border: solid;
+
 }
 
 .emailHouse-container {
@@ -78,4 +92,14 @@ footer {
 
 .nome-sobrenome {
   display: flex;
+}
+
+hr {
+border: solid;
+
+}
+
+.conteudo-container {
+  margin: 0px 50px;
+  padding: 0px 20px;
 }

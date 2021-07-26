@@ -79,20 +79,6 @@ function materias() {
   form.appendChild(materiaP);
 }
 
-// const materiasSelecionadas = [];
-// function materias() {
-//   const checkbox = document.getElementsByName('content-checkbox');
-
-//   for (let i = 0; i < checkbox.length; i += 1) {
-//     if (checkbox[i].checked) {
-//       materiasSelecionadas.push(` ${checkbox[i].value}`);
-//     }
-//   }
-//   const materiaP = document.createElement('p');
-//   materiaP.innerText = `Matérias: ${materiasSelecionadas}`;
-//   form.appendChild(materiaP);
-// }
-
 function rate() {
   const rateInput = document.querySelector('input[name=rate]:checked');
   const resrate = rateInput.value;
