@@ -15,8 +15,9 @@
           <input id="email" type="email" name='email' placeholder="Login">                   
           <input id="password" type="password" name='password' placeholder="Senha">
           <button id="button" type="submit">LOGAR</button>
-          </div>   
+            
       </form>
+      </div>
     </header>
 
     <main class="main">					
@@ -24,18 +25,19 @@
         <div id="remove"> 
           <div id="father-form"> 
             <h2>Forms</h2>
+            <div id="parte1">
               <div class="mb-3 nome-sobrenome">
-                <input placeholder="Nome" id="input-name" type="text">
-                <input placeholder="Sobrenome" id="input-lastname" type="text">				
+                <input placeholder="Nome" id="input-name" class="input-container" type="text">
+                <input placeholder="Sobrenome" id="input-lastname" class="input-container" type="text">				
               </div>
               <div class="emailHouse-container">
                 <div class="mb-3"> 
-                  <input placeholder="Email" id="input-email" type="email">
+                  <input placeholder="Email" id="input-email" class="input-container" type="email">
                 </div>
-
-                <div> 
+                <div id="input-lastname"> 
                   <label>Casa:</label>
-                  <select aria-label="Default select example" name="" id="house">
+                  <select class="form-select input-select" aria-label="Default select example" id="house">
+                    <option selected>Selecione</option>
                     <option id="house" value="House">House</option>
                     <option id="gitnoria-house" value="Gitnoria">Gitnória</option>
                     <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -44,7 +46,9 @@
                   </select>
                 </div>
               </div>
-              <hr>		
+              </div>
+              <hr>
+              <div id="parte2">	
               <div id="familyConteudo-container"> 
                 <section id="family-container">
                   <label for="family" id="label-family">Qual sua família? </label>
@@ -65,43 +69,51 @@
                   <label for="check-box">
                     <div class="mat1">
                       <input value="HoFs" type="checkbox" class="subject" name="content-checkbox">HoFs 
-                      <input value="Jest" type="checkbox" name="content-checkbox" class="subject"> Jest
-                      <input value="Promises" type="checkbox" class="subject" name="content-checkbox">Promises
+                      <input value="Jest" type="checkbox" name="content-checkbox" class="subject sub"> Jest
+                      <input value="Promises" type="checkbox" class="subject sub" name="content-checkbox">Promises
                     </div>
                     <div class="mat2">
                       <input value="React" type="checkbox" class="subject" name="content-checkbox">React 
-                      <input value="SQL" type="checkbox" class="subject" name="content-checkbox">SQL
-                      <input value="Python" type="checkbox" class="subject" name="content-checkbox">Python
-                    </div>   
+                      <input value="SQL" type="checkbox" class="subject sub" name="content-checkbox">SQL
+                      <input value="Python" type="checkbox" class="subject sub" name="content-checkbox">Python
+                    </div> 
+                    </div>	  
                   </label>
                 </section>
             </div>
-            <hr>
+            <hr class="hr2">
+            
+            <div class="parte3">
             <section id="label-container">
               <label id="label-rate">Como você avalia a Trybewarts?</label>
               <div id="avaliacao">
-                <input value="1" name="rate" type="radio">1   
-                <input value="2"  name="rate" type="radio">2          
-                <input value="3" name="rate" type="radio">3
-                <input value="4"  name="rate" type="radio">4
-                <input value="5"  name="rate" type="radio">5
-                <input value="6" name="rate" type="radio">6
-                <input value="7" name="rate" type="radio">7
-                <input value="8" name="rate" type="radio">8
-                <input value="9"  name="rate" type="radio">9
-                <input value="10"  name="rate" type="radio">10                
+                <input value="1" class="av" name="rate" type="radio">1   
+                <input value="2" class="av"  name="rate" type="radio">2          
+                <input value="3" class="av"  name="rate" type="radio">3
+                <input value="4" class="av"   name="rate" type="radio">4
+                <input value="5" class="av"  name="rate" type="radio">5
+                <input value="6" class="av"  name="rate" type="radio">6
+                <input value="7" class="av"  name="rate" type="radio">7
+                <input value="8" class="av"  name="rate" type="radio">8
+                <input value="9" class="av"   name="rate" type="radio">9
+                <input value="10" class="av"   name="rate" type="radio">10                
               </div>
-            </section>   
-            <label for="textarea" class="textarea"> Deixe seu comentário:<label><br>                  
+            </section>
+          
+            <div id="text-area">
+            <label for="textarea" class="textarea"> Deixe seu comentário:<label>               
             <textarea name="" id="textarea" cols="30" rows="10" class="form-check form-control" maxlength="500"></textarea>                     
             <p id="n">
               <strong id="counter">500</strong> caracteres restantes 
             </p>
+            </div>
             <section id="validation-checkbox">
               <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
               <input type="checkbox" id="agreement">
-              </label>             
+              </label>            
             </section>
+            
+          </div>
             <button disabled id="submit-btn" type="submit">Enviar</button>
           </div>
         </div>
